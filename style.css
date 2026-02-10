@@ -68,6 +68,32 @@ footer {
   padding: 40px 20px;
   font-size: 13px;
 }
+.gallery img {
+  width: 100%;
+  height: 200px;      /* ← 高さを固定 */
+  object-fit: cover; /* ← はみ出た分をトリミング */
+  border-radius: 6px; /* 少しだけ上品に */
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ← 3列 → 2列 */
+  gap: 24px; /* 少しゆったり */
+  margin-top: 40px;
+}
+
+.gallery {
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 220px;
+  }
+}
+
 
 
 
