@@ -1,16 +1,10 @@
 /* 全体 */
 body {
-  background-color: #f7f6f3; /* 明るい生成り */
+  background-color: #f3f1ed; /* 少し高級 */
 }
-
-
 /* ヘッダー */
 .header {
-  background-color: #1f1f1f; /* 墨色 */
-  color: #ffffff;
-}
-
-.header a {
+  background-color: #efece6 /* 和モダン */
   color: #ffffff;
 }
 
@@ -33,9 +27,8 @@ body {
   opacity: 0.85;
 }
 
-/* ヒーロー（上の大きな余白） */
 .hero {
-  height: 70vh;
+  height: 50vh;
   background: url("img/hero.jpg") center / cover no-repeat;
   display: flex;
   align-items: center;
