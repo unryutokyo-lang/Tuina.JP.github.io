@@ -1,6 +1,81 @@
-body
-<background-color: #f3f1ed;>
-  
+/* 全体 */
+body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  color: #2b2b2b;
+  background-color: #f3f1ed; /* 和紙っぽい生成り */
+  line-height: 1.9;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #1f1f1f; /* 墨色 */
+  color: #ffffff;
+}
+
+.header a {
+  color: #ffffff;
+}
+
+/* ロゴ */
+.logo {
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+/* ナビ */
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ヒーロー（上の大きな余白） */
+.hero {
+  height: 60vh;
+  background-color: #2a2a2a; /* 写真がなくても落ち着く */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ヒーロー文字 */
+.hero-text {
+  background: rgba(0,0,0,0.45);
+  color: #ffffff;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+/* セクション */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+/* 見出し */
+.section h3 {
+  font-size: 26px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #c8c4bd;
+  padding-bottom: 12px;
+}
+
+/* フッター */
+footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 13px;
+}
 
 
 
