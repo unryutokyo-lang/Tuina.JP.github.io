@@ -43,16 +43,22 @@ body {
 .section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 80px 24px;
+  padding: 50px 24px; /* 80 → 50 に */
 }
+.section {
+  background-color: #f1efe9; /* 上品な薄茶 */
+}
+.section + .section {
+  margin-top: 40px;
+}
+
 
 /* 見出し */
 .section h3 {
-  font-size: 26px;
-  margin-bottom: 32px;
-  border-bottom: 1px solid #c8c4bd;
-  padding-bottom: 12px;
+  font-weight: normal;
+  letter-spacing: 2px;
 }
+
 
 /* フッター */
 footer {
