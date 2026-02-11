@@ -21,22 +21,18 @@ body {
 }
 /* ===== ロゴ全体 ===== */
 .brand {
-  width: 420px;          /* ← 横幅統一（ここで調整） */
-  margin: 60px auto;
-  text-align: center;
+  width: 580px;
 }
 
-/* ===== 英字（上） ===== */
 .brand-en {
-  font-size: 32px;       /* 漢字より少し小さめ */
+  font-size: 46px;
+  font-weight: 700;
   letter-spacing: 0.35em;
-  margin-bottom: 12px;
 }
 
-/* ===== 漢字（下） ===== */
 .brand-ja {
-  font-size: 48px;
-  letter-spacing: 0.25em;
+  font-size: 64px;
+  font-weight: 800;
 }
 
 /* ===== キャッチコピー ===== */
