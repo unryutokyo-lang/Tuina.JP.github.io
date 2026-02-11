@@ -8,9 +8,16 @@ body {
 
 /* ===== ロゴ ===== */
 .logo {
-  font-size: 52px;
-  letter-spacing: 0.3em;
-  margin: 40px 0 20px;
+  font-size: 48px;
+  letter-spacing: 0.25em;
+}
+
+.logo-en {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.4em;
+  margin-top: 6px;
+  color: #8b7d6b;
 }
 
 /* ===== キャッチコピー ===== */
