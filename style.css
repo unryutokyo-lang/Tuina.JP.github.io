@@ -1,76 +1,97 @@
-/* ===== 全体 ===== */
 body {
   margin: 0;
-  background: #f5f1ea;
-  font-family: "Hiragino Mincho ProN", serif;
-}
-
-/* ===== hero 空白防止 ===== */
-.hero {
-  height: auto;
-  padding: 0;
-}
-.logo {
   font-family: "Noto Serif JP", serif;
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
+  background: #f5f1ea;
   color: #2f2a25;
-
-  /* 看板風 */
-  background: linear-gradient(#e6d8c3, #d2bfa4);
-  padding: 14px 28px;
-  display: inline-block;
-
-  border-radius: 4px;
-
-  /* 木の立体感 */
-  box-shadow:
-    0 4px 10px rgba(0,0,0,0.15),
-    inset 0 1px 0 rgba(255,255,255,0.4);
-
-  /* 少し筆の雰囲気 */
-  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  text-align: center;
 }
+
+/* ===== ロゴ ===== */
 .logo {
-  color: #f5f1ea;
-  background: linear-gradient(#5b4636, #3e2f24);
-}
-.logo {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  padding: 20px 12px;
+  font-size: 52px;
+  letter-spacing: 0.3em;
+  margin: 40px 0 20px;
 }
 
-/* ===== ギャラリー ===== */
+/* ===== キャッチコピー ===== */
+.catch {
+  font-size: 20px;
+  margin-bottom: 60px;
+  color: #6b5e52;
+}
+
+/* ===== 写真 ===== */
 .gallery {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #ede7de;
+  max-width: 1100px;
+  margin: 0 auto 80px;
 }
 
-/* ===== 写真（切らない） ===== */
 .gallery img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  margin-bottom: 30px;
   display: block;
-  margin-bottom: 20px;
-}
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
 
-/* ===== セクション ===== */
-.section {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 20px;
+/* ===== コンセプト ===== */
+.concept {
+  font-size: 18px;
+  line-height: 2;
+  margin: 80px auto;
+  max-width: 600px;
 }
 
-.bg {
+/* ===== 料金 ===== */
+.menu {
   background: #ede7de;
+  padding: 80px 20px;
 }
+
+.menu h2 {
+  margin-bottom: 40px;
+}
+
+.course {
+  margin-bottom: 30px;
+}
+
+.course h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.first {
+  margin-top: 40px;
+}
+
+/* ===== 予約 ===== */
+.reservation {
+  margin: 80px 0;
+}
+
+.tel {
+  font-size: 32px;
+  margin-top: 10px;
+  letter-spacing: 0.1em;
+}
+
+/* ===== 地図 ===== */
+.access iframe {
+  width: 90%;
+  max-width: 700px;
+  height: 400px;
+  border: 0;
+  margin-top: 40px;
+}
+
+.access p {
+  margin: 30px 0 80px;
+}
+
+/* ===== フッター ===== */
+footer {
+  padding: 30px 0;
+  font-size: 14px;
+  color: #888;
+}
+
+ 
