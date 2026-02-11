@@ -1,113 +1,40 @@
-/* ===== 全体背景 ===== */
+/* ===== 全体 ===== */
 body {
-  background-color: #f5f1ea;
   margin: 0;
+  background: #f5f1ea;
+  font-family: "Hiragino Mincho ProN", serif;
 }
 
-/* ===== セクション余白 ===== */
-section {
-  padding: 40px 20px;
+/* ===== hero 空白防止 ===== */
+.hero {
+  height: auto;
+  padding: 0;
 }
 
-/* ===== 画像（トリミングしない） ===== */
-img {
+/* ===== ギャラリー ===== */
+.gallery {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ede7de;
+}
+
+/* ===== 写真（切らない） ===== */
+.gallery img {
   width: 100%;
-  max-width: 900px;
   height: auto;
   object-fit: contain;
   display: block;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-
-/* ロゴ */
-.logo {
-  font-size: 22px;
-  letter-spacing: 3px;
-}
-
-/* ナビ */
-.nav {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-}
-
-.nav a {
-  text-decoration: none;
-  font-size: 14px;
-  opacity: 0.85;
-}
-
-..hero {
-  height: auto;
-  padding: 60px 0;
-}
-  background: url("img/hero.jpg") center / cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-text {
-  background: rgba(0,0,0,0.35);
-}
-
-/* セクション */
+/* ===== セクション ===== */
 .section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 50px 24px; /* 80 → 50 に */
-}
-.section {
-  background-color: #f1efe9; /* 上品な薄茶 */
-}
-.section + .section {
-  margin-top: 40px;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
 }
 
-
-/* 見出し */
-.section h3 {
-  font-weight: normal;
-  letter-spacing: 2px;
+.bg {
+  background: #ede7de;
 }
-
-
-/* フッター */
-footer {
-  background-color: #1f1f1f;
-  color: #ccc;
-  text-align: center;
-  padding: 40px 20px;
-  font-size: 13px;
-}
-.gallery img {
-  width: 100%;
-  height: 100px;      /* ← 高さを固定 */
-  object-fit: contain; /* ← はみ出た分をトリミング */
-  border-radius: 6px; /* 少しだけ上品に */
-}
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* ← 3列 → 2列 */
-  gap: 24px; /* 少しゆったり */
-  margin-top: 40px;
-}
-
-.gallery {
-  gap: 20px;
-}
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery img {
-    height: 120px;
-  }
-}
-
-
-
-
