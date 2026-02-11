@@ -19,6 +19,25 @@ body {
   margin-top: 6px;
   color: #8b7d6b;
 }
+/* ===== ロゴ全体 ===== */
+.brand {
+  width: 420px;          /* ← 横幅統一（ここで調整） */
+  margin: 60px auto;
+  text-align: center;
+}
+
+/* ===== 英字（上） ===== */
+.brand-en {
+  font-size: 32px;       /* 漢字より少し小さめ */
+  letter-spacing: 0.35em;
+  margin-bottom: 12px;
+}
+
+/* ===== 漢字（下） ===== */
+.brand-ja {
+  font-size: 48px;
+  letter-spacing: 0.25em;
+}
 
 /* ===== キャッチコピー ===== */
 .catch {
