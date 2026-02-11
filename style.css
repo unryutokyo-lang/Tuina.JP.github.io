@@ -40,9 +40,11 @@ header {
 
 /* ===== キャッチコピー ===== */
 .catch {
-  font-size: 20px;
+  font-size: 40px;
   margin-bottom: 60px;
   color: #6b5e52;
+   width: fit-content;   /* ← 超重要：中身ぴったり */
+  text-align: center;
 }
 
 /* ===== 写真 ===== */
