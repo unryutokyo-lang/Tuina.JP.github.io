@@ -2,43 +2,37 @@ body {
   margin: 0;
 }
 
+body {
+  margin: 0;
+}
+
+/* ヘッダー中央 */
 header {
   display: flex;
   justify-content: center;
 }
 
+/* ===== ロゴ全体 ===== */
 .brand {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
   margin: 60px auto;
+
+  width: fit-content;   /* ← 超重要：中身ぴったり */
+  text-align: center;
 }
 
-
-/* ===== ロゴ ===== */
-.logo {
-  font-size: 48px;
-  letter-spacing: 0.25em;
-}
-
-.logo-en {
-  display: block;
-  font-size: 14px;
-  letter-spacing: 0.4em;
-  margin-top: 6px;
-  color: #8b7d6b;
-}
-/* ===== ロゴ全体 ===== */
-.brand {
-  width: 580px;
-}
-
+/* 英字 */
 .brand-en {
   font-size: 46px;
   font-weight: 700;
   letter-spacing: 0.35em;
 }
 
+/* 漢字 */
 .brand-ja {
   font-size: 64px;
   font-weight: 800;
