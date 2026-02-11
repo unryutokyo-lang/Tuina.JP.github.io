@@ -1,92 +1,85 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>雲龍推拿</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雲龍推拿</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- 和風明朝フォント -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
+<!-- ===== ヘッダー ===== -->
 <header class="header">
-  <div class="header-inner">
-    <h1 class="logo">雲龍推拿</h1>
-    <nav>
-      <ul class="nav">
-      </ul>
-    </nav>
-  </div>
+  <h1 class="logo">雲龍推拿</h1>
 </header>
 
-<section class="hero"></section>
-
-<div class="gallery">
-  <img src="img/room1.jpg" alt="入り口の雰囲気">
-  <img src="img/room5.jpg" alt="施術空間">
-</div>
-
-<section id="about" class="section">
-  <h3>当院について</h3>
-   <p>
-当院では、一人ひとりの状態に合わせ、<br>
-静けさを大切にした施術を行っています。
-</p>
-
-<p>
-整えるのは身体だけでなく、<br>
-その人が本来持っている「自然な状態」。
-</p>
-
-<p>
-施術後に、<br>
-呼吸が深くなった感覚、<br>
-頭が静まる感覚を、<br>
-そっと持ち帰っていただければ幸いです。
-</p>
-
+<!-- ===== キャッチコピー ===== -->
+<section class="catch">
+  <p>触れるのは、静けさ。</p>
 </section>
 
-<section id="menu" class="section bg">
-  <h3>料金のご案内</h3>
-  <ul class="menu">
-    <li>
-      <h4>初回の方へ</h4>
-      <p>※通常施術料金より1,100円引きいたします。</p>
-    </li>
-    <li>
-      <h4>巡（めぐり）コース</h4>
-      <p>30分 / 4,400円</p>
-    </li>
-    <li>
-      <h4>整（ととのう）コース</h4>
-      <p>60分 / 7,700円</p>
-    </li>
-    <li>
-      <h4>解（ほどく）コース</h4>
-      <p>90分 /11,000円</p>
-    </li>
-  </ul>
+<!-- ===== 空間写真 ===== -->
+<section class="gallery">
+  <img src="img/room1.jpg">
+  <img src="img/room2.jpg">
+  <img src="img/room3.jpg">
+  <img src="img/room4.jpg">
+  <img src="img/room5.jpg">
 </section>
 
-<section id="access" class="section">
-  <h3>アクセス</h3>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1622.7503478445992!2d139.6540024696513!3d35.56603168920512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185f80dad1bdad%3A0x597c62b93584278e!2z44CSMjExLTAwMjUg56We5aWI5bed55yM5bed5bSO5biC5Lit5Y6f5Yy65pyo5pyI77yR5LiB55uu77yR77yW4oiS77yWIO-8ue-8s-ODk-ODq--8kw!5e0!3m2!1sja!2sjp!4v1770733294152!5m2!1sja!2sjp" 
-  width="500"
-  height="400" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+<!-- ===== 施術理念 ===== -->
+<section class="concept">
   <p>
-    〒211-0025<br>
-    神奈川県川崎市中原区木月１丁目16−６YSビルⅢ１F<br>
-    完全予約制⇨⇨090−6468−5868
+整えるのは、身体だけではありません。<br>
+本来の静けさへ、そっと還る時間を。
   </p>
 </section>
 
-<footer class="footer">
-  <p>© 2026 雲龍推拿</p>
+<!-- ===== 料金 ===== -->
+<section class="menu">
+  <h2>施術</h2>
+
+  <div class="course">
+    <h3>巡 ― めぐり</h3>
+    <p>30分　4,400円</p>
+  </div>
+
+  <div class="course">
+    <h3>整 ― ととのう</h3>
+    <p>60分　7,700円</p>
+  </div>
+
+  <div class="course">
+    <h3>解 ― ほどく</h3>
+    <p>90分　11,000円</p>
+  </div>
+
+  <p class="first">初回　1,100円引き</p>
+</section>
+
+<!-- ===== 予約 ===== -->
+<section class="reservation">
+  <p>完全予約制</p>
+  <p class="tel">090-6468-5868</p>
+</section>
+
+<!-- ===== アクセス ===== -->
+<section class="access">
+<iframe src="https://www.google.com/maps?q=35.56603168920512,139.6540024696513&output=embed"></iframe>
+
+<p>
+〒211-0025<br>
+神奈川県川崎市中原区木月１丁目16−６YSビルⅢ１F
+</p>
+</section>
+
+<footer>
+<p>© 雲龍推拿</p>
 </footer>
 
 </body>
