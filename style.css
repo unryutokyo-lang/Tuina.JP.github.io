@@ -10,6 +10,37 @@ body {
   height: auto;
   padding: 0;
 }
+.logo {
+  font-family: "Noto Serif JP", serif;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #2f2a25;
+
+  /* 看板風 */
+  background: linear-gradient(#e6d8c3, #d2bfa4);
+  padding: 14px 28px;
+  display: inline-block;
+
+  border-radius: 4px;
+
+  /* 木の立体感 */
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+
+  /* 少し筆の雰囲気 */
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.logo {
+  color: #f5f1ea;
+  background: linear-gradient(#5b4636, #3e2f24);
+}
+.logo {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 20px 12px;
+}
 
 /* ===== ギャラリー ===== */
 .gallery {
