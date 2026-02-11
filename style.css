@@ -94,4 +94,16 @@ footer {
   color: #888;
 }
 
- 
+ /* メイン入口写真 */
+.main-photo {
+  max-width: 1000px;
+  margin: 40px auto 80px;
+}
+
+.main-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
