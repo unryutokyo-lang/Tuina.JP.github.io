@@ -46,38 +46,38 @@ header {
 }
 
 /* ===== メイン写真 + オーバーレイキャッチ ===== */
+/* style.css に追加または修正 */
 .main-photo {
-  position: relative;          /* ← これ超重要！ 追加 */
+  position: relative;          /* ← これが超重要！ */
   max-width: 1000px;
-  margin: 0 auto 60px;         /* 上の空白をなくして、下だけ余白 */
+  margin: 40px auto 80px;
 }
 
 .main-photo img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 4px;
 }
 
 .catch-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;                /* 文字色（背景が暗めならwhite、明るめなら#333に） */
-  font-size: 48px;             /* 大きめに */
-  font-weight: bold;
+  transform: translate(-50%, -50%);  /* 画像の真ん中に配置 */
   text-align: center;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.7); /* 影で読みやすく */
-  white-space: nowrap;
-  padding: 0 20px;
-  line-height: 1.2;
+  color: white;
+  font-size: 2.5rem;                 /* サイズは好みで調整 */
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);  /* 影で読みやすく */
+  pointer-events: none;              /* クリック貫通 */
+  white-space: nowrap;               /* 改行させたくない場合 */
 }
 
-/* スマホ調整（メディアクエリの中に追加） */
+/* スマホ対応（例） */
 @media (max-width: 768px) {
   .catch-overlay {
-    font-size: 32px;           /* スマホで小さく */
+    font-size: 1.8rem;
+    padding: 0 20px;
   }
 }
 /* ===== ギャラリー ===== */
