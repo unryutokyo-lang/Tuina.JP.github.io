@@ -45,10 +45,11 @@ header {
   line-height: 1.4;
 }
 
-/* ===== メイン入口写真 ===== */
+/* ===== メイン写真 + オーバーレイキャッチ ===== */
 .main-photo {
+  position: relative;          /* ← これ超重要！ 追加 */
   max-width: 1000px;
-  margin: 40px auto 80px;
+  margin: 0 auto 60px;         /* 上の空白をなくして、下だけ余白 */
 }
 
 .main-photo img {
@@ -58,6 +59,27 @@ header {
   border-radius: 4px;
 }
 
+.catch-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;                /* 文字色（背景が暗めならwhite、明るめなら#333に） */
+  font-size: 48px;             /* 大きめに */
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7); /* 影で読みやすく */
+  white-space: nowrap;
+  padding: 0 20px;
+  line-height: 1.2;
+}
+
+/* スマホ調整（メディアクエリの中に追加） */
+@media (max-width: 768px) {
+  .catch-overlay {
+    font-size: 32px;           /* スマホで小さく */
+  }
+}
 /* ===== ギャラリー ===== */
 .gallery {
   max-width: 1100px;
@@ -192,8 +214,8 @@ footer {
 
 /* スマホ対応（メディアクエリ） */
 @media (max-width: 768px) {
-  .brand-en { font-size: 32px; }
-  .brand-ja { font-size: 48px; }
+  .brand-en { font-size: 40px; }   /* 46px → 40px */
+　.brand-ja { font-size: 56px; }   /* 64px → 56px */
   .catch { font-size: 28px; }
   .gallery { grid-template-columns: 1fr; }
   .concept h1 { font-size: 26px; }
