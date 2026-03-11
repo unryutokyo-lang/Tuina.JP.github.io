@@ -269,3 +269,60 @@ padding:14px 26px;
 }
 
 }
+.about,
+.symptoms,
+.flow,
+.faq{
+
+max-width:800px;
+margin:90px auto;
+padding:0 20px;
+text-align:center;
+
+}
+
+.about h2,
+.symptoms h2,
+.flow h2,
+.faq h2{
+
+font-size:30px;
+margin-bottom:30px;
+
+}
+
+.symptoms ul{
+
+list-style:none;
+padding:0;
+
+}
+
+.symptoms li{
+
+margin:10px 0;
+font-size:18px;
+
+}
+
+.flow ol{
+
+text-align:left;
+max-width:500px;
+margin:auto;
+
+}
+
+.flow li{
+
+margin:15px 0;
+line-height:1.8;
+
+}
+
+.faq p{
+
+margin:20px 0;
+line-height:1.8;
+
+}
