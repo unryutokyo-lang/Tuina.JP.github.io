@@ -1,73 +1,200 @@
 body{
-font-family: 'Noto Serif JP', serif;
+font-family:'Noto Serif JP',serif;
 margin:0;
 color:#333;
 background:#fafafa;
-text-align:center;
+line-height:1.8;
 }
 
-header{
-padding:40px 20px;
+/* ヘッダー */
+
+.header{
+text-align:center;
+padding:50px 20px;
 }
 
 .brand-en{
 font-size:14px;
-letter-spacing:3px;
-color:#666;
+letter-spacing:4px;
+color:#777;
 }
 
 .brand-ja{
-font-size:36px;
-margin-top:5px;
+font-size:38px;
+margin-top:8px;
+font-weight:600;
 }
 
-.main-photo img{
+/* トップ写真 */
+
+.hero{
+position:relative;
+}
+
+.hero img{
 width:100%;
-max-height:500px;
+height:520px;
 object-fit:cover;
 }
 
-.catch{
-margin:20px;
-font-size:20px;
+.hero-text{
+position:absolute;
+bottom:60px;
+left:50%;
+transform:translateX(-50%);
+color:white;
+text-align:center;
+background:rgba(0,0,0,0.35);
+padding:30px;
+border-radius:4px;
 }
 
-section{
-padding:60px 20px;
+.hero-text h1{
+font-size:32px;
+margin-bottom:10px;
 }
+
+.hero-text p{
+font-size:16px;
+}
+
+/* セクション共通 */
+
+section{
+max-width:900px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2{
+font-size:28px;
+margin-bottom:30px;
+text-align:center;
+}
+
+/* コンセプト */
+
+.concept p{
+text-align:center;
+}
+
+/* ギャラリー */
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:10px;
+gap:12px;
+padding:60px 20px;
 }
 
 .gallery img{
 width:100%;
+border-radius:4px;
 }
 
-.menu .course{
-margin:20px 0;
+/* 症状 */
+
+.symptoms ul{
+max-width:400px;
+margin:auto;
+}
+
+.symptoms li{
+margin-bottom:10px;
+}
+
+/* メニュー */
+
+.menu{
+text-align:center;
+}
+
+.menu-box{
+background:white;
+padding:40px;
+border-radius:6px;
+box-shadow:0 0 10px rgba(0,0,0,0.05);
+}
+
+.course{
+margin:25px 0;
+}
+
+.first{
+font-size:18px;
+margin-bottom:30px;
+}
+
+/* 予約 */
+
+.reservation{
+text-align:center;
+background:#f2f2f2;
 }
 
 .btn{
 display:inline-block;
 margin:10px;
-padding:12px 20px;
+padding:14px 26px;
 background:#222;
 color:white;
 text-decoration:none;
-border-radius:5px;
+border-radius:4px;
+transition:0.3s;
 }
 
-iframe{
+.btn:hover
+
+/* アクセス */
+
+.access iframe{
 width:100%;
-height:300px;
+height:320px;
 border:none;
+margin-bottom:20px;
 }
+
+/* 注意書き */
+
+.notice{
+text-align:center;
+font-size:14px;
+color:#666;
+padding:40px 20px;
+}
+
+/* フッター */
 
 footer{
-padding:30px;
+text-align:center;
+padding:40px;
 color:#777;
 font-size:14px;
+}
+
+/* スマホ */
+
+@media (max-width:768px){
+
+.hero img{
+height:360px;
+}
+
+.hero-text{
+width:80%;
+padding:20px;
+}
+
+.hero-text h1{
+font-size:24px;
+}
+
+section{
+padding:60px 15px;
+}
+
+.brand-ja{
+font-size:30px;
+}
+
 }
