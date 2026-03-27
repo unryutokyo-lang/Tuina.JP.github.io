@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>雲龍推拿｜元住吉の肩こり・腰痛専門</title>
-    <meta name="description" content="元住吉駅徒歩1分。中国伝統推拿で肩こり・腰痛・関節の不調を根本から整える施術院。完全予約制で落ち着いた空間をお届けします。">
+    <meta name="description" content="元住吉駅徒歩1分。中国伝統推拿で肩こり・腰痛・関節の不調を深部から根本改善。完全予約制の落ち着いた施術院です。">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -18,32 +18,35 @@
             margin: 0;
             color: var(--text-dark);
             background: #fafaf8;
-            line-height: 1.8;
+            line-height: 1.85;
         }
 
         /* ヘッダー */
         .header {
             text-align: center;
-            padding: 40px 20px 30px;
+            padding: 35px 20px 25px;
             background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         .brand-en {
-            font-size: 14px;
-            letter-spacing: 4px;
-            color: #777;
+            font-size: 13.5px;
+            letter-spacing: 5px;
+            color: #666;
         }
         .brand-ja {
             font-size: 36px;
-            margin-top: 8px;
+            margin-top: 6px;
             font-weight: 600;
             color: var(--main-green);
         }
 
-        /* ヒーロー */
+        /* ヒーロー（今回の施術写真をメインに使用） */
         .hero {
             position: relative;
-            height: 620px;
+            height: 640px;
             overflow: hidden;
         }
         .hero img {
@@ -55,7 +58,7 @@
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0,0,0,0.38);
+            background: rgba(0,0,0,0.28); /* 明るい施術写真に合わせて調整 */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -63,148 +66,169 @@
         .hero-text {
             text-align: center;
             color: white;
-            max-width: 520px;
-            padding: 20px;
+            max-width: 560px;
+            padding: 0 20px;
         }
         .hero-sub {
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             font-size: 15px;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
         }
         .hero-text h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            line-height: 1.2;
+            font-size: 44px;
+            margin-bottom: 22px;
+            line-height: 1.15;
         }
         .hero-desc {
-            margin-bottom: 35px;
-            font-size: 17px;
+            font-size: 17.5px;
+            margin-bottom: 38px;
         }
         .hero-btn {
             display: inline-block;
-            padding: 16px 36px;
+            padding: 17px 40px;
             background: white;
             color: var(--main-green);
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
+            border-radius: 50px;
+            font-weight: 600;
             font-size: 17px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+            transition: all 0.3s;
+        }
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.22);
         }
 
         /* 共通セクション */
         section {
-            max-width: 920px;
+            max-width: 940px;
             margin: auto;
-            padding: 80px 20px;
+            padding: 85px 20px;
         }
         h2 {
-            font-size: 28px;
-            margin-bottom: 40px;
+            font-size: 29px;
+            margin-bottom: 42px;
             text-align: center;
             color: var(--main-green);
         }
 
         /* お悩み */
         .symptoms ul {
-            max-width: 420px;
+            max-width: 440px;
             margin: auto;
             padding: 0;
             list-style: none;
         }
         .symptoms li {
-            margin-bottom: 14px;
-            padding-left: 8px;
+            margin-bottom: 16px;
+            padding-left: 10px;
             position: relative;
+            font-size: 17px;
         }
         .symptoms li:before {
             content: "・";
             color: var(--main-green);
+            font-size: 22px;
             position: absolute;
-            left: -8px;
+            left: -12px;
+            top: -2px;
         }
 
-        /* メニュー */
+        /* コンセプト（ここに「無」のアート写真を配置） */
+        .concept {
+            background: #f8f7f3;
+        }
+        .concept img {
+            width: 100%;
+            max-width: 620px;
+            margin: 45px auto 0;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        /* 施術メニュー */
         .menu-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 26px;
         }
         .menu-card {
             background: white;
-            padding: 32px 24px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            padding: 34px 26px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
             text-align: center;
-            transition: transform 0.2s;
+            transition: all 0.3s;
         }
         .menu-card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
         }
         .menu-card .badge {
             display: inline-block;
             background: #c44;
             color: white;
             font-size: 13px;
-            padding: 4px 14px;
-            border-radius: 20px;
-            margin-bottom: 12px;
+            padding: 5px 18px;
+            border-radius: 30px;
+            margin-bottom: 14px;
         }
         .menu-card h3 {
-            margin: 12px 0 8px;
-            font-size: 22px;
+            margin: 14px 0 6px;
+            font-size: 23px;
             color: var(--main-green);
         }
         .menu-card .time {
-            font-size: 15px;
+            font-size: 15.5px;
             color: #666;
         }
         .menu-card .price {
-            font-size: 24px;
-            font-weight: 600;
+            font-size: 26px;
+            font-weight: 700;
             color: var(--main-green);
-            margin: 8px 0 16px;
+            margin: 10px 0 18px;
         }
         .menu-card .desc {
-            font-size: 15px;
+            font-size: 15.5px;
             color: #555;
-            line-height: 1.6;
+            line-height: 1.65;
         }
 
         /* ボタン */
         .btn {
             display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
+            margin: 12px 8px;
+            padding: 16px 34px;
             background: var(--main-green);
             color: white;
             text-decoration: none;
-            border-radius: 6px;
-            font-size: 16px;
-        }
-        .btn.primary {
-            background: #2E4F3F;
+            border-radius: 50px;
+            font-size: 16.5px;
             font-weight: 500;
+            box-shadow: 0 5px 15px rgba(46,79,63,0.3);
+        }
+        .btn:hover {
+            background: #3a6652;
         }
 
         /* LINE */
         .line-qr {
-            width: 210px;
-            margin: 25px auto;
+            width: 220px;
+            margin: 28px auto;
             display: block;
-        }
-        .line-id {
-            color: #666;
-            margin: 10px 0;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
         }
 
         /* アクセス */
         .access iframe {
             width: 100%;
-            height: 340px;
+            height: 360px;
             border: none;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
         }
 
         /* 注意書き・フッター */
@@ -212,12 +236,12 @@
             text-align: center;
             font-size: 14.5px;
             color: #666;
-            padding: 50px 20px;
-            background: #f8f8f6;
+            padding: 55px 20px;
+            background: #f8f7f3;
         }
         footer {
             text-align: center;
-            padding: 50px 20px 30px;
+            padding: 55px 20px 40px;
             color: #777;
             font-size: 14px;
         }
@@ -225,44 +249,31 @@
         /* 固定LINEボタン */
         .line-fixed {
             position: fixed;
-            bottom: 25px;
-            right: 25px;
+            bottom: 28px;
+            right: 28px;
             z-index: 999;
         }
         .line-fixed a {
             background: #06C755;
             color: white;
-            padding: 15px 28px;
-            border-radius: 30px;
+            padding: 16px 32px;
+            border-radius: 50px;
             text-decoration: none;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-            font-size: 16px;
-            display: inline-flex;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            font-size: 16.5px;
+            display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        /* モバイル対応 */
+        /* モバイル対応（より美しく） */
         @media (max-width: 768px) {
-            .hero {
-                height: 480px;
-            }
-            .hero-text h1 {
-                font-size: 28px;
-            }
-            .hero-btn {
-                padding: 14px 28px;
-                font-size: 16px;
-            }
-            section {
-                padding: 60px 15px;
-            }
-            .brand-ja {
-                font-size: 30px;
-            }
-            .menu-container {
-                grid-template-columns: 1fr;
-            }
+            .hero { height: 520px; }
+            .hero-text h1 { font-size: 32px; }
+            section { padding: 65px 18px; }
+            .brand-ja { font-size: 30px; }
+            .menu-container { grid-template-columns: 1fr; }
+            .hero-btn { padding: 15px 32px; font-size: 16px; }
         }
     </style>
 </head>
@@ -274,12 +285,12 @@
         <div class="brand-ja">雲龍推拿</div>
     </header>
 
-    <!-- ヒーロー -->
+    <!-- ヒーロー（今回の施術写真を使用） -->
     <section class="hero">
-        <img src="img/hero-room.jpg" alt="雲龍推拿 施術空間">
+        <img src="img/hero-room.jpg" alt="雲龍推拿 施術風景">
         <div class="hero-overlay">
             <div class="hero-text">
-                <p class="hero-sub">元住吉駅徒歩1分</p>
+                <p class="hero-sub">元住吉駅 徒歩1分</p>
                 <h1>肩こり・腰痛・関節の不調に。</h1>
                 <p class="hero-desc">
                     中国伝統の推拿で、体の深部から整える施術院。<br>
@@ -302,13 +313,15 @@
         </ul>
     </section>
 
-    <!-- コンセプト -->
-    <section class="concept" style="background:#f8f8f6;">
+    <!-- コンセプト（ここに「無」のアート写真を配置） -->
+    <section class="concept">
         <h2>雲龍推拿で根本から整える</h2>
-        <p style="max-width:680px; margin:auto; text-align:center;">
-            雲龍推拿では、中国伝統の推拿（すいな）を用いて、肩こり・腰痛・関節の不調など慢性的な悩みにアプローチします。<br>
+        <p style="max-width:720px; margin:auto; text-align:center; font-size:17px;">
+            雲龍推拿では、中国伝統の推拿（すいな）を用いて、肩こり・腰痛・関節の不調など慢性的な悩みに深くアプローチします。<br>
             その場しのぎではなく、経絡やツボから体のバランスを整え、根本改善を目指します。
         </p>
+        <!-- 「無」のアート写真をここに配置（伝統と力強さを象徴） -->
+        <img src="img/unryu-art.jpg" alt="雲龍推拿 - 無">
     </section>
 
     <!-- 施術メニュー -->
@@ -348,13 +361,13 @@
     </section>
 
     <!-- ご予約 -->
-    <section class="reservation" style="background:#f2f2f0; text-align:center;">
+    <section class="reservation" style="background:#f2f1ee; text-align:center;">
         <h2>ご予約方法</h2>
         <div>
-            <a href="tel:0445735982" class="btn primary">📞 044-573-5982</a>
+            <a href="tel:0445735982" class="btn">📞 044-573-5982</a>
             <a href="mailto:unryu.tokyo@gmail.com" class="btn">✉ メール予約</a>
         </div>
-        <p style="margin-top:30px;">
+        <p style="margin-top:32px; font-size:16px;">
             <strong>営業時間</strong> 10:00〜22:00　｜　<strong>定休日</strong> 月曜日・第3火曜日
         </p>
     </section>
@@ -364,7 +377,7 @@
         <h2>LINE予約も便利です</h2>
         <p>LINEから簡単にお問い合わせ・ご予約いただけます。</p>
         <img src="img/line-qr.png" alt="LINE QRコード" class="line-qr">
-        <p class="line-id">LINE ID：@038vdvuv</p>
+        <p class="line-id" style="margin:10px 0 20px;">LINE ID：@038vdvuv</p>
         <a href="https://line.me/R/ti/p/@038vdvuv" class="btn" style="background:#06C755;">LINEで予約する</a>
     </section>
 
@@ -372,7 +385,7 @@
     <section class="access">
         <h2>アクセス</h2>
         <iframe src="https://www.google.com/maps?q=35.56603168920512,139.6540024696513&output=embed"></iframe>
-        <p style="text-align:center;">
+        <p style="text-align:center; font-size:16px;">
             〒211-0025 神奈川県川崎市中原区木月1丁目16−6 YSビルⅢ 1F<br>
             東急東横線 元住吉駅 徒歩1分
         </p>
@@ -385,7 +398,7 @@
 
     <!-- フッター -->
     <footer>
-        <div class="brand-ja" style="font-size:28px; margin-bottom:12px;">雲龍推拿</div>
+        <div class="brand-ja" style="font-size:28px; margin-bottom:14px;">雲龍推拿</div>
         <p>© 雲龍推拿 All Rights Reserved.</p>
     </footer>
 
