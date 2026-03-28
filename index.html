@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>雲龍推拿｜元住吉の肩こり・腰痛専門</title>
     <meta name="description" content="元住吉駅徒歩1分。中国伝統推拿で肩こり・腰痛・関節の不調を深部から根本改善。完全予約制の落ち着いた施術院です。">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --main-green: #2E4F3F;
-            --accent-beige: #F5F0E8;
+            --accent-beige: #F8F5F0;
             --text-dark: #333;
         }
-
         body {
             font-family: 'Noto Serif JP', serif;
             margin: 0;
@@ -20,8 +19,6 @@
             background: #fafaf8;
             line-height: 1.85;
         }
-
-        /* ヘッダー */
         .header {
             text-align: center;
             padding: 35px 20px 25px;
@@ -42,8 +39,7 @@
             font-weight: 600;
             color: var(--main-green);
         }
-
-        /* ヒーロー（今回の施術写真をメインに使用） */
+        /* ヒーロー */
         .hero {
             position: relative;
             height: 640px;
@@ -58,7 +54,7 @@
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0,0,0,0.28); /* 明るい施術写真に合わせて調整 */
+            background: rgba(0,0,0,0.23); /* 薄めに調整して施術写真の明るさを活かす */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -100,7 +96,7 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.22);
         }
 
-        /* 共通セクション */
+        /* 共通 */
         section {
             max-width: 940px;
             margin: auto;
@@ -135,20 +131,17 @@
             top: -2px;
         }
 
-        /* コンセプト（ここに「無」のアート写真を配置） */
-        .concept {
-            background: #f8f7f3;
-        }
-        .concept img {
+        /* 漢字アート画像用 */
+        .art-img {
             width: 100%;
-            max-width: 620px;
-            margin: 45px auto 0;
+            max-width: 680px;
+            margin: 40px auto 20px;
             display: block;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
         }
 
-        /* 施術メニュー */
+        /* メニュー */
         .menu-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -180,14 +173,12 @@
             font-size: 23px;
             color: var(--main-green);
         }
-        .menu-card .time {
-            font-size: 15.5px;
-            color: #666;
+        .menu-card .time, .menu-card .price {
+            color: var(--main-green);
         }
         .menu-card .price {
             font-size: 26px;
             font-weight: 700;
-            color: var(--main-green);
             margin: 10px 0 18px;
         }
         .menu-card .desc {
@@ -266,7 +257,7 @@
             gap: 8px;
         }
 
-        /* モバイル対応（より美しく） */
+        /* モバイル対応 */
         @media (max-width: 768px) {
             .hero { height: 520px; }
             .hero-text h1 { font-size: 32px; }
@@ -285,7 +276,7 @@
         <div class="brand-ja">雲龍推拿</div>
     </header>
 
-    <!-- ヒーロー（今回の施術写真を使用） -->
+    <!-- ヒーロー（施術写真） -->
     <section class="hero">
         <img src="img/hero-room.jpg" alt="雲龍推拿 施術風景">
         <div class="hero-overlay">
@@ -313,22 +304,27 @@
         </ul>
     </section>
 
-    <!-- コンセプト（ここに「無」のアート写真を配置） -->
-    <section class="concept">
+    <!-- コンセプト（「整」のアートをメインに配置） -->
+    <section class="concept" style="background:#f8f7f3;">
         <h2>雲龍推拿で根本から整える</h2>
         <p style="max-width:720px; margin:auto; text-align:center; font-size:17px;">
             雲龍推拿では、中国伝統の推拿（すいな）を用いて、肩こり・腰痛・関節の不調など慢性的な悩みに深くアプローチします。<br>
             その場しのぎではなく、経絡やツボから体のバランスを整え、根本改善を目指します。
         </p>
-        <!-- 「無」のアート写真をここに配置（伝統と力強さを象徴） -->
-        <img src="img/unryu-art.jpg" alt="雲龍推拿 - 無">
+        <!-- 「整」のアート写真 -->
+        <img src="img/sei-art.png" alt="整 - 中国伝統推拿で体を整える" class="art-img">
+        
+        <!-- 「無」のアートも残したい場合はここに追加可能 -->
+        <!-- <img src="img/unryu-art.jpg" alt="雲龍推拿 - 無" class="art-img" style="margin-top:60px;"> -->
     </section>
 
-    <!-- 施術メニュー -->
+    <!-- メニュー（「体」のアートを上部に配置） -->
     <section class="menu">
         <h2>施術メニュー</h2>
+        <!-- 「体」のアート写真をここに追加 -->
+        <img src="img/tai-art.png" alt="体 - 体を整える" class="art-img" style="margin-bottom:50px;">
+        
         <div class="menu-container">
-
             <div class="menu-card">
                 <div class="badge">初回限定</div>
                 <h3>初回体験コース</h3>
@@ -336,21 +332,18 @@
                 <p class="price">5,500円</p>
                 <p class="desc">初めての方におすすめ。推拿の効果と心地よさをしっかり体感いただけます。</p>
             </div>
-
             <div class="menu-card">
                 <h3>巡 ― めぐり</h3>
                 <p class="time">30分</p>
                 <p class="price">4,200円</p>
                 <p class="desc">血流を促し、全身の巡りを整えるコース。疲労回復に。</p>
             </div>
-
             <div class="menu-card">
                 <h3>整 ― ととのう</h3>
                 <p class="time">60分</p>
                 <p class="price">7,700円</p>
                 <p class="desc">姿勢や体のバランスを整えるメインコース。肩こり・腰痛に効果的。</p>
             </div>
-
             <div class="menu-card">
                 <h3>解 ― ほどく</h3>
                 <p class="time">90分</p>
