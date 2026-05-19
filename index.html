@@ -1,6 +1,8 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,31 +18,54 @@
 
 :root{
 --main-green:#2E4F3F;
+--light-bg:#f5f5f2;
+}
+
+*{
+box-sizing:border-box;
 }
 
 body{
-font-family:'Noto Serif JP',serif;
 margin:0;
-color:#333;
+font-family:'Noto Serif JP',serif;
 background:#fafaf8;
-line-height:1.8;
+color:#333;
+line-height:1.9;
+}
+
+img{
+max-width:100%;
+display:block;
 }
 
 .header{
-text-align:center;
-padding:30px;
 background:#fff;
+padding:25px 20px;
+text-align:center;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .brand-ja{
 font-size:34px;
 color:var(--main-green);
+letter-spacing:3px;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
 }
 
 .hero{
 position:relative;
-height:640px;
+height:680px;
+max-width:none;
+padding:0;
+overflow:hidden;
 }
 
 .hero img{
@@ -52,107 +77,160 @@ object-fit:cover;
 .hero-overlay{
 position:absolute;
 inset:0;
-background:rgba(0,0,0,0.35);
+background:rgba(0,0,0,0.38);
 display:flex;
 align-items:center;
 justify-content:center;
+padding:20px;
 }
 
 .hero-text{
 text-align:center;
 color:#fff;
-max-width:650px;
-padding:20px;
+max-width:700px;
+}
+
+.hero-text p{
+font-size:18px;
 }
 
 h1{
-font-size:42px;
-margin-bottom:20px;
+font-size:46px;
 line-height:1.4;
+margin:20px 0;
+font-weight:500;
 }
 
 h2{
+font-size:34px;
 text-align:center;
 color:var(--main-green);
-margin-bottom:30px;
-font-size:32px;
+margin-bottom:40px;
+font-weight:500;
+}
+
+h3{
+color:var(--main-green);
+margin-bottom:20px;
 }
 
 .btn{
 display:inline-block;
-padding:15px 30px;
+padding:15px 34px;
 background:var(--main-green);
 color:#fff;
-border-radius:50px;
 text-decoration:none;
-margin-top:15px;
+border-radius:50px;
+margin:10px;
 transition:0.3s;
+font-size:16px;
 }
 
 .btn:hover{
 opacity:0.85;
+transform:translateY(-2px);
 }
 
-section{
-max-width:950px;
-margin:auto;
-padding:80px 20px;
+.center{
+text-align:center;
+}
+
+.light-section{
+background:var(--light-bg);
+border-radius:18px;
 }
 
 .menu-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
 }
 
 .menu-card{
 background:#fff;
-padding:25px;
-border-radius:14px;
+padding:35px 20px;
+border-radius:16px;
 box-shadow:0 5px 15px rgba(0,0,0,0.08);
 text-align:center;
 font-size:20px;
 }
 
+.recruit-box{
+background:var(--light-bg);
+padding:35px;
+border-radius:18px;
+margin-top:35px;
+}
+
+ul{
+padding-left:22px;
+}
+
+.space-top{
+margin-top:35px;
+}
+
+.image-box{
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
 .line-fixed{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 z-index:999;
 }
 
 .line-fixed a{
 background:#06C755;
 color:#fff;
-padding:15px 25px;
+padding:16px 26px;
 border-radius:50px;
 text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,0.2);
+font-weight:bold;
 }
 
-.recruit-box{
-background:#f5f5f2;
-padding:30px;
-border-radius:14px;
-margin-top:30px;
+footer{
+background:#fff;
+padding:40px 20px;
+text-align:center;
+margin-top:50px;
+}
+
+iframe{
+width:100%;
+height:350px;
+border:0;
+border-radius:18px;
 }
 
 @media(max-width:768px){
 
 .hero{
-height:520px;
+height:540px;
 }
 
 h1{
-font-size:30px;
+font-size:31px;
 }
 
 h2{
-font-size:26px;
+font-size:28px;
 }
 
 .brand-ja{
 font-size:28px;
+}
+
+section{
+padding:60px 18px;
+}
+
+.menu-card{
+font-size:18px;
 }
 
 }
@@ -166,9 +244,12 @@ font-size:28px;
 <div class="brand-ja">雲龍推拿</div>
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
 
-<img src="img/hero-room.jpg" alt="元住吉 整体 中国推拿 雲龍推拿">
+<img src="img/hero-room.jpg"
+alt="元住吉 整体 中国推拿 雲龍推拿">
 
 <div class="hero-overlay">
 
@@ -182,7 +263,7 @@ font-size:28px;
 </h1>
 
 <p>
-腰痛・肩こり・慢性疲労を深部から改善
+腰痛・肩こり・慢性疲労を深部から整える
 </p>
 
 <a href="tel:0445735982" class="btn">
@@ -190,54 +271,67 @@ font-size:28px;
 </a>
 
 </div>
+
 </div>
 </section>
 
 <!-- 整 -->
-<section style="text-align:center;">
+
+<section class="center">
+
+<div class="image-box" style="max-width:540px;margin:auto;">
 
 <img src="img/sei.jpg"
-alt="元住吉 整体 根本改善 雲龍推拿"
-style="width:100%;max-width:520px;border-radius:12px;">
+alt="元住吉 整体 根本改善 雲龍推拿">
 
-<p style="margin-top:15px;font-size:20px;">
+</div>
+
+<p style="margin-top:20px;font-size:22px;">
 その不調、“整えて”いますか？
 </p>
 
 </section>
 
 <!-- 悩み -->
+
 <section>
 
 <h2>このようなお悩みはありませんか？</h2>
 
-<ul style="max-width:600px;margin:auto;font-size:18px;">
+<div style="max-width:700px;margin:auto;font-size:18px;">
 
-<li>慢性的な肩こりがつらい</li>
+<ul>
+
+<li>慢性的な肩こり・首こり</li>
 <li>腰痛がなかなか改善しない</li>
 <li>疲れが抜けない・体が重い</li>
-<li>眼精疲労・首こりが気になる</li>
-<li>眠りが浅く、回復しにくい</li>
+<li>眼精疲労や頭の重さ</li>
+<li>眠りが浅い・回復しにくい</li>
 
 </ul>
 
-<p style="text-align:center;margin-top:30px;">
+</div>
+
+<p class="center space-top">
 元住吉・武蔵小杉エリアで整体をお探しの方へ。<br>
-中国伝統推拿で根本改善を目指します。
+中国伝統推拿で身体の根本改善を目指します。
 </p>
 
 </section>
 
 <!-- 特徴 -->
-<section style="background:#f5f5f2;">
+
+<section class="light-section">
 
 <h2>雲龍推拿の特徴</h2>
 
-<p style="text-align:center;max-width:700px;margin:auto;">
+<p class="center" style="max-width:760px;margin:auto;">
 
 中国伝統の推拿（すいな）は、
 経絡とツボへ働きかけ、
 血流と身体バランスを整える施術です。
+
+<br><br>
 
 その場しのぎではなく、
 慢性的な不調を根本から改善へ導きます。
@@ -247,57 +341,62 @@ style="width:100%;max-width:520px;border-radius:12px;">
 </section>
 
 <!-- 募集 -->
+
 <section>
 
 <h2>整体師・推拿生徒 募集中</h2>
 
-<div style="text-align:center;">
+<!-- recruit.jpg が無いと表示されないので仮画像対応 -->
 
-<img src="img/recruit.jpg"
-alt="元住吉 整体師募集 推拿スクール 雲龍推拿"
-style="width:100%;max-width:700px;border-radius:14px;">
+<div class="image-box" style="max-width:760px;margin:auto;">
+
+<img src="img/room.jpg"
+alt="元住吉 整体師募集 推拿スクール 雲龍推拿">
 
 </div>
 
 <div class="recruit-box">
 
-<p style="font-size:20px;text-align:center;">
+<p class="center" style="font-size:22px;">
 
-雲龍推拿では、
-一緒に働く整体師・推拿を学びたい生徒を募集しています。
+雲龍推拿では、<br>
+一緒に働く整体師・推拿生徒を募集しています。
 
 </p>
 
-<p style="text-align:center;">
+<p class="center">
 
 中国伝統推拿を実践的に学びながら、
 施術経験を積むことができます。
 
-未経験者歓迎。独立希望の方もご相談ください。
+<br><br>
+
+未経験者歓迎。<br>
+将来独立を目指す方もご相談ください。
 
 </p>
 
-<hr style="margin:35px 0;">
+<hr style="margin:40px 0;">
 
-<h3 style="color:#2E4F3F;">募集内容</h3>
+<h3>募集内容</h3>
 
 <ul>
 
 <li>整体師・セラピスト</li>
 <li>推拿技術を学びたい方</li>
 <li>将来独立を目指す方</li>
-<li>副業・週数日希望も相談可能</li>
+<li>副業・週数日勤務も相談可能</li>
 
 </ul>
 
-<p>
+<p class="space-top">
 
 勤務地：元住吉駅 徒歩1分<br>
 お問い合わせはLINEまたはメールよりご連絡ください。
 
 </p>
 
-<div style="text-align:center;">
+<div class="center">
 
 <a href="https://line.me/R/ti/p/@038vdvuv"
 class="btn"
@@ -314,19 +413,28 @@ LINEで募集問い合わせ
 </section>
 
 <!-- 院内 -->
-<section style="text-align:center;">
+
+<section class="center">
 
 <h2>落ち着いた施術空間</h2>
 
+<div class="image-box" style="max-width:650px;margin:auto;">
+
 <img src="img/room.jpg"
-alt="元住吉 整体 院内 雲龍推拿"
-style="width:100%;max-width:600px;border-radius:14px;margin-bottom:30px;">
+alt="元住吉 整体 院内 雲龍推拿">
+
+</div>
+
+<div style="height:35px;"></div>
+
+<div class="image-box" style="max-width:420px;margin:auto;">
 
 <img src="img/orchid.jpg"
-alt="開店祝い 胡蝶蘭 雲龍推拿"
-style="width:100%;max-width:420px;border-radius:14px;">
+alt="開店祝い 胡蝶蘭 雲龍推拿">
 
-<p style="margin-top:25px;">
+</div>
+
+<p style="margin-top:30px;">
 静かで落ち着いた空間で、
 安心して施術を受けていただけます。
 </p>
@@ -334,6 +442,7 @@ style="width:100%;max-width:420px;border-radius:14px;">
 </section>
 
 <!-- メニュー -->
+
 <section>
 
 <h2>施術メニュー</h2>
@@ -365,36 +474,38 @@ style="width:100%;max-width:420px;border-radius:14px;">
 </section>
 
 <!-- アクセス -->
+
 <section>
 
 <h2>アクセス</h2>
 
 <iframe
-src="https://www.google.com/maps?q=木月1丁目16-6+川崎市&output=embed"
-width="100%"
-height="350"
-style="border:0;border-radius:14px;">
+src="https://www.google.com/maps?q=木月1丁目16-6+川崎市&output=embed">
 </iframe>
 
-<p style="text-align:center;margin-top:20px;">
+<p class="center space-top">
 
 〒211-0025<br>
 神奈川県川崎市中原区木月1丁目16-6 YSビルIII 1F
 
 </p>
 
-<img src="img/entrance.jpg"
-alt="元住吉 整体 雲龍推拿 外観"
-style="width:100%;max-width:650px;border-radius:14px;margin-top:25px;">
+<div class="image-box space-top" style="max-width:700px;margin:auto;">
 
-<p style="text-align:center;">
+<img src="img/entrance.jpg"
+alt="元住吉 整体 雲龍推拿 外観">
+
+</div>
+
+<p class="center" style="margin-top:20px;">
 この入口が目印です
 </p>
 
 </section>
 
 <!-- 予約 -->
-<section style="text-align:center">
+
+<section class="center">
 
 <h2>ご予約・お問い合わせ</h2>
 
@@ -413,17 +524,17 @@ class="btn">
 ✉ メール予約
 </a>
 
-<p style="margin-top:30px;">
+<p style="margin-top:35px;">
 LINEが一番スムーズにご案内できます。
 </p>
 
 <img src="img/line-qr.png"
 alt="LINE QRコード"
-style="width:220px;">
+style="width:220px;margin:auto;">
 
 </section>
 
-<footer style="text-align:center;padding:40px;background:#fff">
+<footer>
 
 <p>© 雲龍推拿</p>
 
@@ -439,3 +550,4 @@ LINE予約
 
 </body>
 </html>
+```
