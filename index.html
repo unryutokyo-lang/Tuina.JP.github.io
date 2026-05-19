@@ -39,7 +39,7 @@ display:block;
 
 .header{
 background:#fff;
-padding:25px 20px;
+padding:28px 20px;
 text-align:center;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
 position:sticky;
@@ -48,9 +48,10 @@ z-index:999;
 }
 
 .brand-ja{
-font-size:34px;
+font-size:42px;
 color:var(--main-green);
-letter-spacing:3px;
+letter-spacing:4px;
+font-weight:500;
 }
 
 section{
@@ -87,6 +88,7 @@ padding:20px;
 text-align:center;
 color:#fff;
 max-width:700px;
+margin-top:70px;
 }
 
 .hero-text p{
@@ -94,10 +96,17 @@ font-size:18px;
 }
 
 h1{
-font-size:46px;
-line-height:1.4;
+font-size:52px;
+line-height:1.5;
 margin:20px 0;
 font-weight:500;
+}
+
+.hero-sub{
+font-size:32px;
+line-height:1.8;
+display:block;
+margin-top:10px;
 }
 
 h2{
@@ -209,11 +218,15 @@ border-radius:18px;
 @media(max-width:768px){
 
 .hero{
-height:540px;
+height:560px;
 }
 
 h1{
-font-size:31px;
+font-size:36px;
+}
+
+.hero-sub{
+font-size:24px;
 }
 
 h2{
@@ -221,7 +234,7 @@ font-size:28px;
 }
 
 .brand-ja{
-font-size:28px;
+font-size:34px;
 }
 
 section{
@@ -230,6 +243,10 @@ padding:60px 18px;
 
 .menu-card{
 font-size:18px;
+}
+
+.hero-text{
+margin-top:40px;
 }
 
 }
@@ -257,9 +274,9 @@ alt="元住吉 整体 中国推拿 雲龍推拿">
 <p>元住吉駅 徒歩1分</p>
 
 <h1>
-雲龍推拿<br>
+雲龍推拿
 
-<span style="font-size:34px;">
+<span class="hero-sub">
 元住吉 整体<br>
 中国推拿（すいな）専門
 </span>
